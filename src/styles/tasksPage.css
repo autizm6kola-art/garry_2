@@ -1,0 +1,77 @@
+.task-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  position: relative;
+}
+
+.task-heading {
+  text-align: center;
+  font-size: 28px;
+  margin: 10px 0 8px;
+}
+
+.task-back-button {
+  position: static;
+  top: 20px;
+  right: 20px;
+  /* margin: 20px 70px 200px 20px; */
+  
+  /* Можно добавить media-запрос позже для адаптивности */
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.task-item {
+  border: 1px solid #ccc;
+  padding: 0 0 0 19px;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+.backButton{
+   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .task-heading {
+    font-size: 22px;
+    margin: 30px 0 12px;
+  }
+
+  .task-back-button {
+    position: static;
+    margin-bottom: 15px;
+  }
+
+  .task-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+.reset-button-contaner {
+  display: flex;
+  justify-content: center;
+}
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: #f9f9f9;
+}
+

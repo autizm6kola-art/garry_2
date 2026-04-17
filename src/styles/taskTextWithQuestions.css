@@ -1,0 +1,133 @@
+.task-container {
+  
+  
+  background-color: #dadbcd66;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-radius: 10px;
+  gap: 30px;
+
+  max-width: 1000px; /* фиксированная максимальная ширина */
+  margin: 0 auto;   /* центрирование контейнера */
+  width: 100%;      /* чтобы адаптировалось для экранов меньше 900px */
+}
+
+
+.task-heading {
+  text-align: center;
+  font-size: 28px;
+  margin: 10px 0 8px;
+}
+
+.text-block {
+  flex: 1;
+  background-color: #f7f7f7;
+  padding: 0 15px 0 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.text-block p {
+  white-space: pre-line;
+  line-height: 1.7;
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.questions-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.question-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.answer-input {
+  width: 98%;
+  margin-top: 2px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* маленькая кнопка сохранения одного ответа */
+.save-single-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.save-single-button:hover {
+  background-color: #45a049;
+}
+
+/* статус заполненного ответа */
+.question-correct {
+  background-color: #d4edda;
+  border: 1px solid #6bbf74;
+}
+
+/* статус пустого ответа */
+.question-empty {
+  background-color: #ffe2e2;
+  border: 1px solid #949393;
+}
+
+/* статус для плавного сброса */
+.question-reset {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+
+/* кнопка "Сохранить все ответы" */
+.save-all-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.save-all-button:hover {
+  background-color: #45a049;
+}
+
+/* статус сохранения */
+.save-status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #28a745;
+  text-align: center;
+}
+
+/* заголовок вопроса с кнопкой */
+.question-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}

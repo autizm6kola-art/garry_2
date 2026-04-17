@@ -1,0 +1,23 @@
+.tasks-page-wrapper {
+  position: relative;
+  padding-top: 70px; /* чтобы контент не прятался под "прилипшей" панелью */
+}
+
+.sticky-progress {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.progress-info {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tasks-list {
+  margin-top: 20px;
+}

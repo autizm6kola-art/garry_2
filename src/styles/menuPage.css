@@ -1,0 +1,74 @@
+.menu-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 20px 20px;
+  position: relative;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.menu-progress-text {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.range-buttons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+  gap: 1px;
+  justify-content: center;
+}
+
+.reset-button {
+  
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+/* menuPage.css */
+
+.range-button {
+  background-color: #eee;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.range-button.completed {
+  background-color: #4caf50; /* зелёная */
+  color: white;
+}
+
+.range-button.partial {
+  background-color: #fffc39; /* жёлтая */
+  color: black;
+}
+
+.range-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    padding: 30px 12px;
+  }
+
+  .menu-title {
+    font-size: 22px;
+  }
+}
